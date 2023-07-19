@@ -290,6 +290,7 @@ public class EncryptedCustomersRecord extends UpdatableRecordImpl<EncryptedCusto
         setFirstName(firstName);
         setLastName(lastName);
         setEmailAddress(emailAddress);
+        resetChangedOnNotNull();
     }
 
     /**
@@ -305,6 +306,7 @@ public class EncryptedCustomersRecord extends UpdatableRecordImpl<EncryptedCusto
             setFirstName(value.getFirstName());
             setLastName(value.getLastName());
             setEmailAddress(value.getEmailAddress());
+            resetChangedOnNotNull();
         }
     }
 }

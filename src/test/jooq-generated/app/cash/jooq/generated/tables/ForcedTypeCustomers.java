@@ -58,12 +58,12 @@ public class ForcedTypeCustomers extends TableImpl<ForcedTypeCustomersRecord> {
     /**
      * The column <code>FORCED_TYPE_CUSTOMERS.CREATED_AT</code>.
      */
-    public final TableField<ForcedTypeCustomersRecord, LocalDateTime> CREATED_AT = createField(DSL.name("CREATED_AT"), SQLDataType.LOCALDATETIME(6).nullable(false).defaultValue(DSL.field("CURRENT_TIMESTAMP", SQLDataType.LOCALDATETIME)), this, "");
+    public final TableField<ForcedTypeCustomersRecord, LocalDateTime> CREATED_AT = createField(DSL.name("CREATED_AT"), SQLDataType.LOCALDATETIME(6).nullable(false).defaultValue(DSL.field(DSL.raw("CURRENT_TIMESTAMP"), SQLDataType.LOCALDATETIME)), this, "");
 
     /**
      * The column <code>FORCED_TYPE_CUSTOMERS.UPDATED_AT</code>.
      */
-    public final TableField<ForcedTypeCustomersRecord, LocalDateTime> UPDATED_AT = createField(DSL.name("UPDATED_AT"), SQLDataType.LOCALDATETIME(6).nullable(false).defaultValue(DSL.field("CURRENT_TIMESTAMP", SQLDataType.LOCALDATETIME)), this, "");
+    public final TableField<ForcedTypeCustomersRecord, LocalDateTime> UPDATED_AT = createField(DSL.name("UPDATED_AT"), SQLDataType.LOCALDATETIME(6).nullable(false).defaultValue(DSL.field(DSL.raw("CURRENT_TIMESTAMP"), SQLDataType.LOCALDATETIME)), this, "");
 
     /**
      * The column <code>FORCED_TYPE_CUSTOMERS.FIRST_NAME</code>.

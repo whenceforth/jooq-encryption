@@ -290,6 +290,7 @@ public class UnprotectedCustomersRecord extends UpdatableRecordImpl<UnprotectedC
         setFirstName(firstName);
         setLastName(lastName);
         setEmailAddress(emailAddress);
+        resetChangedOnNotNull();
     }
 
     /**
@@ -305,6 +306,7 @@ public class UnprotectedCustomersRecord extends UpdatableRecordImpl<UnprotectedC
             setFirstName(value.getFirstName());
             setLastName(value.getLastName());
             setEmailAddress(value.getEmailAddress());
+            resetChangedOnNotNull();
         }
     }
 }

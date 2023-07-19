@@ -189,6 +189,8 @@ class EncryptionAwareJavaGenerator : JavaGenerator() {
 
     override fun getParameters(): MutableList<ParameterDefinition> = table.parameters
 
+    override fun getReferencedTable(): TableDefinition = table;
+
     override fun isTemporary(): Boolean = table.isTemporary
 
     override fun isView(): Boolean = table.isView

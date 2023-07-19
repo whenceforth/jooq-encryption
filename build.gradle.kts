@@ -22,9 +22,9 @@ repositories {
 
 dependencies {
     implementation("com.google.crypto.tink:tink-android:1.7.0")
-    implementation("org.jooq:jooq-codegen:3.17.6")
-    implementation("org.jooq:jooq-meta:3.17.6")
-    implementation("org.jooq:jooq-meta-extensions:3.17.6")
+    implementation("org.jooq:jooq-codegen:3.18.5")
+    implementation("org.jooq:jooq-meta:3.18.5")
+    implementation("org.jooq:jooq-meta-extensions:3.18.5")
 
     testImplementation("org.assertj:assertj-core:3.24.1")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
